@@ -1,0 +1,136 @@
+#first-block
+  .wrapper
+    .title
+      Продажа мыла ручной работы
+
+
+#second-block
+  .wrapper
+    .left
+      .offer
+        Оставьте заявку до
+        %span.light 28 сентября
+        и получите каталог со скидкой
+        %span.light 20%
+
+
+      .phone
+        .small или позвоните по номеру
+        8 800 2000 600
+
+    .right
+      .form-container
+        .top-form
+          %input#name-input{type: :text, name: 'username', placeholder: 'Введите ваше имя'}
+          %input{type: :text, name: 'phone', placeholder: 'Введите ваш номер телефона'}
+          .button.order-button
+            Получить скидку
+
+.wrapper
+  .catalog
+
+    .item
+      .name
+        Облепиха
+      .image
+        %img{src: '/images/soap2.jpg'}
+      .desc
+        Стимулирует восстановление кожи, ускоряет заживление поврежденных тканей.
+        Оказывает общеукрепляющее действие, обладает антиоксидантным действием.
+        Нормализует работу сальных желез, обладает отбеливающим действием.
+      .price-block
+        Цена по акции:
+        %span.old-price  450
+        %span.current-price 330 рублей
+
+
+    .item
+      .name
+        Лаванда
+      .image
+        %img{src: '/images/soap1.jpg'}
+      .desc
+        Стимулирует восстановление кожи, ускоряет заживление поврежденных тканей.
+        Оказывает общеукрепляющее действие, обладает антиоксидантным действием.
+        Нормализует работу сальных желез, обладает отбеливающим действием.
+
+      .price-block
+        Цена по акции:
+        %span.old-price  450
+        %span.current-price 330 рублей
+
+    .item
+      .name
+        Мишка Тедди
+      .image
+        %img{src: '/images/soap3.jpg'}
+      .desc
+        Подходит для всех типов кожи, особенно для жирной и проблемной.
+        Поддерживает баланс жиров и влаги, уменьшает поры.
+        Тонизирует и освежает вялую, утомленную кожу. Смягчает, не оставляет блеска.
+
+      .price-block
+        Цена по акции:
+        %span.old-price  450
+        %span.current-price 330 рублей
+
+    .item
+      .name
+        Лето
+      .image
+        %img{src: '/images/soap4.jpg'}
+      .desc
+        Масло персиковое возвращает упругость и природный здоровый цвет кожи благодаря
+        стимулированию обменных процессов. Полезно для растянутой, увядающей или утомленной кожи.
+      .price-block
+        Цена по акции:
+        %span.old-price  450
+        %span.current-price 330 рублей
+
+
+
+#third-block
+  .wrapper
+    .blocks
+      .block
+        .block-head
+          Бесплатная доставка
+        .block-content
+          Доставка по всей России полностью бесплатна.
+
+      .block
+        .block-head
+          Низкая цена
+        .block-content
+          Мы работаем напрямую с производителем, поэтому можем позволить себе акции и низкие цены.
+
+      .block.last
+        .block-head
+          Гарантия качества
+        .block-content
+          Товар устроит вас или мы вернем вам деньги.
+
+    .button
+      Получить каталог
+
+
+
+.modal-overlay
+.modal-thank-you
+  .header
+    Спасибо!
+  .body
+    Мы свяжемся с вами уже очень скоро.
+
+
+    %button#hide-thank-you
+      Я буду ждать!
+
+.modal-dialog
+  .header
+    Оставьте свои контактные данные, чтобы получить прайс со скидкой
+  .body
+    %input{type: :text, name: :username, placeholder: 'Введите ваше имя'}
+    %input{type: :text, name: :phone, placeholder: 'Введите ваш телефон'}
+    %button.order-button
+      Получить прайс
