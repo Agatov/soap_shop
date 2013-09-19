@@ -29,23 +29,23 @@ class Application < Sinatra::Base
 
   post '/orders.json' do
 
-    phones = %w(79269093237)
+    phones = %w(79169931919)
 
     message = "#{params[:order][:username]}. #{params[:order][:phone]}"
 
-    #phones.each do |phone|
-    #  HTTParty.get(
-    #      'http://api.sms24x7.ru',
-    #      query: {
-    #          method: 'push_msg',
-    #          email: 'agatovs@gmail.com',
-    #          password: 'avv6rqE',
-    #          phone: phone.to_s,
-    #          text: message,
-    #          sender_name: 'konvert'
-    #      }
-    #  )
-    #end
+    phones.each do |phone|
+      HTTParty.get(
+          'http://api.sms24x7.ru',
+          query: {
+              method: 'push_msg',
+              email: 'agatovs@gmail.com',
+              password: 'avv6rqE',
+              phone: phone.to_s,
+              text: message,
+              sender_name: 'soap'
+          }
+      )
+    end
 
     content_type :json
     {status: :success}.to_json
